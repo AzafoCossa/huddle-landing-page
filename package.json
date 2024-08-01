@@ -4,8 +4,8 @@
   "description": "Huddle Landing Page challenge from Frontend Mentor, simple design with a single introductory section.",
   "main": "index.html",
   "scripts": {
-    "build": "sass ./sass/main.scss ./css/main.css --style=compressed",
-    "watch": "sass  --watch ./sass/main.scss ./css/main.css",
+    "build": "sass ./sass/:./css/ --style=compressed",
+    "watch": "sass  --watch ./sass/:./css/",
     "w": "npm run watch"
   },
   "repository": {
