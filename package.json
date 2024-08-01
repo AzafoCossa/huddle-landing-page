@@ -1,0 +1,30 @@
+{
+  "name": "huddle-landing-page",
+  "version": "1.0.0",
+  "description": "Huddle Landing Page challenge from Frontend Mentor, simple design with a single introductory section.",
+  "main": "index.html",
+  "scripts": {
+    "build": "sass ./sass/main.scss ./css/main.css --style=compressed",
+    "watch": "sass  --watch ./sass/main.scss ./css/main.css",
+    "w": "npm run watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzafoCossa/huddle-landing-page.git"
+  },
+  "keywords": [
+    "Challenge",
+    "Single page",
+    "Web Design",
+    "SASS"
+  ],
+  "author": "Azafo Cossa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AzafoCossa/huddle-landing-page/issues"
+  },
+  "homepage": "https://github.com/AzafoCossa/huddle-landing-page#readme",
+  "dependencies": {
+    "sass": "^1.77.8"
+  }
+}
