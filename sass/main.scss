@@ -1,5 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+
+$violet: hsl(257, 40%, 49%);
+$soft-magenta: hsl(300, 69%, 71%);
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+}
+
+.container {
+  width: minmax(375px, 1440px);
+  margin: 0 auto;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background: $violet url("../images/bg-desktop.svg") center top/cover no-repeat;
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+}
+
+.showcase {
+  padding: 4rem 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  font-size: 1.3rem;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: $violet;
+  text-decoration: none;
+  padding: 1rem 4rem;
+  font-size: 1.4rem;
+  border-radius: 5rem;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    background-color: $soft-magenta;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.icons {
+  position: absolute;
+  bottom: 40px;
+  right: 4rem;
+
+  ul {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+
+    li {
+      list-style: none;
+      height: 50px;
+      width: 50px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        border: 1px solid $soft-magenta;
+
+        & > a > svg {
+          color: $soft-magenta;
+        }
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.d {
+  &-block {
+    display: block;
+  }
+}
+
+.h {
+  &1 {
+    font-size: 2.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+}
+
+.mt {
+  &-2 {
+    margin-top: 1.6rem;
+  }
+  &-4 {
+    margin-top: 4rem;
+  }
+}
+
+.py {
+  &-2 {
+    padding: 1.5rem 0;
+  }
 }
